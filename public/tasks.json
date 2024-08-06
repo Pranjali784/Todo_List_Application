@@ -1,0 +1,17 @@
+//dummy JSON file
+[
+  {
+    "id": "1",
+    "task": "Sample Task 1",
+    "completed": false,
+    "isEditing": false,
+    "lastUpdated": "2024-08-01T12:34:56Z"
+  },
+  {
+    "id": "2",
+    "task": "Sample Task 2",
+    "completed": false,
+    "isEditing": false,
+    "lastUpdated": "2024-08-01T12:34:56Z"
+  }
+]

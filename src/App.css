@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
+
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f5f5dc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.App {
+  text-align: center;
+  padding: 2rem;
+}
+
+h1 {
+  color: #8b4513;
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.TodoWrapper {
+  background: #fffaf0;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  margin: 2rem auto;
+}
+
+.TodoForm {
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+.todo-input {
+  outline: none;
+  background: #f0e68c;
+  border: 1px solid #ccc;
+  padding: 0.75rem;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  width: calc(100% - 2rem);
+  color: #8b4513;
+  border-radius: 5px;
+}
+
+.todo-input::placeholder {
+  color: #999;
+}
+
+.todo-btn {
+  background: #8b4513;
+  color: #fff;
+  border: none;
+  padding: 0.75rem;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.Todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #8b4513;
+  color: #fff;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.todo-actions {
+  display: flex;
+  align-items: center;
+}
+
+.todo-actions .fa-icon {
+  margin-left: 1rem;
+  cursor: pointer;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  padding: 0.25rem;
+}
+
+.fa-trash-alt {
+  color: #ff6b6b;
+}
+
+.fa-check-circle {
+  color: #28a745;
+}
+
+.fa-edit {
+  color: #ffc107;
+}
+
+.completed {
+  color: #d2b48c;
+  text-decoration: line-through;
+}
+
+.SearchTask {
+  margin-bottom: 1.5rem;
+}
+
+.task-details {
+  background: #f0e68c;
+  padding: 0.5rem;
+  border-radius: 5px;
+  margin-top: 0.5rem;
+  color: #8b4513;
+}
+
+button {
+  background: #fffaf0;
+  color: #8b4513;
+  border: 1px solid #8b4513;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.expand-btn {
+  background: #d2691e;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Trendy Icons for Actions */
+.todo-actions .fa-trash-alt::before {
+  content: "\f2ed"; /* FontAwesome Unicode for trash icon */
+}
+
+.todo-actions .fa-check-circle::before {
+  content: "\f058"; /* FontAwesome Unicode for check circle icon */
+}
+
+.todo-actions .fa-edit::before {
+  content: "\f044"; /* FontAwesome Unicode for edit icon */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .TodoWrapper {
+    padding: 1.5rem;
+  }
+
+  .todo-input {
+    width: calc(100% - 1.5rem);
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .todo-btn {
+    padding: 0.5rem;
+  }
+
+  .Todo {
+    padding: 0.5rem;
+  }
+
+  .fa-icon {
+    margin-left: 0.5rem;
+  }
+}
